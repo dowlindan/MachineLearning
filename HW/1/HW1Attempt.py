@@ -39,11 +39,11 @@ Xr = pca.inverse_transform(Z)
 Xrimg = numpy.reshape(Xr, (40,40))
 
 # Display original and reconstructed images and output values of k
-
 print("K values: ", pca.n_components_)
 print(pca.explained_variance_)
 
 fig = plt.figure()
+
 plt.subplot(1,2,1)
 plt.imshow(numpy.reshape(subject02centerlight, (40,40)), cmap='gray')
 plt.title("Original Image")
@@ -51,5 +51,6 @@ plt.title("Original Image")
 plt.subplot(1,2,2)
 plt.imshow(Xrimg, cmap='gray')
 plt.title("Reconstructed Image")
+
 plt.show()
 
