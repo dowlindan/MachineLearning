@@ -19,13 +19,14 @@ for filename in os.listdir(imgdir):
 		else:
 			X = numpy.append(X,im,axis=0)
 
-print(X.shape)
+#print(X.shape)
 #plt.imshow(numpy.reshape(X[0],(40,40)),cmap='gray')
 #plt.show()
 
 # Perform PCA finding smallest k such that 95% of eigenvalues are retained
 pca = PCA(n_components=0.95)
 pca.fit(X)
+
 # Project subject02.centerlight onto k most important principal components
 subject02centerlightimg = Image.open(imgdir + "/subject02.centerlight")
 subject02centerlightimg = subject02centerlightimg.resize((40,40))
