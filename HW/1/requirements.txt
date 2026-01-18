@@ -1,0 +1,5 @@
+numpy
+matplotlib
+scikit-learn
+pillow
+pyqt6 # to solve UserWarning: FigureCanvaseAgg is non-interactive, and thus cannot be shown
