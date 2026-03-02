@@ -14,7 +14,6 @@ for filename in os.listdir(imgdir):
 	parts = filename.split('.')
 	if parts[1] != 'txt':
 		classID = parts[0][7:9]
-		print(classID)
 		Y.append(classID)
 		im = Image.open(imgdir + "/" + filename)
 		im = im.resize((40,40))
