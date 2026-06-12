@@ -1,4 +1,4 @@
-# HW5: Decision Tree
+# HW6: Naive Bayes
 Dan Dowlin | djd439 | CS-383-001
 
 
@@ -18,8 +18,8 @@ This houses two scripts that predict a Cartiotocography dataset target (NSP) and
 
 3. Run scripts
 
-`python3 ./CTG_HW5Attempt.py`
-`python3 ./YaleFaces_HW5Attempt.py`
+`python3 ./HW6_CTG.py`
+`python3 ./HW6_YaleFaces.py`
 
 ## Problems / Issues
 
